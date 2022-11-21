@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+@layer base{
+    body{
+        overflow-x: hidden;
+    }
+} */
+
+@layer components{
+    .trend-item{
+        @apply relative bg-cover h-190 w-[250px] mr-3 rounded-md mobile:w-full desktop:w-[250px];
+    }
+}
+
+@layer utilities{
+    .text-2xl{
+        font-size: 6rem;
+    }
+}

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/reddit/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body >
+    <nav class="flex-row flex   items-center  mt-2 justify-between sticky top-0 bg-white  z-10 mb-2" >
+      <div class="left flex flex-row justify-between w-48 items-center">
+        <div> 
+         <img src="logo.jpg" alt="">
+        </div>
+        <div class="flex flex-row justify-between items-center w-28 ">
+          <i class="fa-solid fa-arrow-up"></i>
+          <span class="font-bold mobile:hidden desktop:flex">Popular</span>
+        </div>
+      </div>
+      
+      <div class="right flex flex-row justify-between items-center w-[60%] ">
+        <div class="center w-[60%] flex flex-row items-center justify-center ">
+          <input type="search" placeholder="Search Reddit" class=" w-full border-none rounded-full  hover:outline-1 hover:outline  hover:outline-blue-500 focus:outline-blue-500 focus:outline-1 focus:outline p-2 ">
+        </div>
+        <div class="flex flex-row justify-between items-center w-[30%]   mr-4">
+          <button class="rounded-full p-1 text-blue-600  bg-white border border-blue-400 justify-center w-28 mobile:hidden desktop:flex  desktop:items-center" >Sign Up</button>
+          <button class="rounded-full p-1 text-white  bg-blue-700 w-28 mobile:hidden desktop:flex  justify-center">Log In</button>
+          <div class="flex flex-row justify-between items-center "> 
+            <i class="fa-solid fa-user text-gray-500"></i>
+            <i class="fa-solid  fa-chevron-down text-gray-500"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="container flex flex-row ">
+        <div class="left flex-col justify-between items-start mx-8 max-h-[630px] sticky left-1 top-14  mobile:hidden desktop:flex desktop:w-72">
+          <span class="text-xs mb-2">FEEDS</span>
+          <div class="flex flex-row gap-2 items-center " >
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </div>
+          <div class="mb-2 flex flex-row gap-2 items-center ">
+            <i class="fa-solid fa-arrow-up"></i>
+            <span>Popular</span>
+          </div>
+          <span class="text-xs mb-2">TOPICS</span>
+         <div class="flex flex-row  items-center justify-between w-full hover:cursor-pointer hover:bg-gray-200  ">
+          <div>
+            <i class="fa-solid fa-gamepad"></i>
+            <span>Gaming</span>
+          </div>
+          <i class="fa-solid fa-chevron-down text-gray-400"></i>
+         </div>
+         <div class="flex flex-row  items-center justify-between w-full hover:cursor-pointer hover:bg-gray-200 ">
+          <div>
+            <i class="fa-solid fa-futbol"></i>
+            <span>Sports</span>
+          </div>
+          <i class="fa-solid fa-chevron-down text-gray-400"></i>
+         </div>
+         <div class="flex flex-row  items-center justify-between w-full hover:cursor-pointer hover:bg-gray-200 ">
+          <div>
+            <i class="fa-solid fa-chart-line"></i>
+            <span>Business,Economics,</span>
+          </div>
+          <i class="fa-solid fa-chevron-down text-gray-400"></i>
+         </div>
+         <div class="flex flex-row  items-center justify-between w-full hover:cursor-pointer hover:bg-gray-200 ">
+          <div>
+            <i class="fa-brands fa-bitcoin"></i>
+            <span>Crypto</span>
+          </div>
+          <i class="fa-solid fa-chevron-down text-gray-400"></i>
+         </div>
+         <div class="flex flex-row  items-center justify-between w-full hover:cursor-pointer hover:bg-gray-200 ">
+          <div>
+            <i class="fa-solid fa-tv"></i>
+            <span>Television</span>
+          </div>
+          <i class="fa-solid fa-chevron-down text-gray-400"></i>
+         </div>
+         <div class="flex flex-row  items-center justify-between w-full hover:cursor-pointer hover:bg-gray-200 ">
+          <div>
+            <i class="fa-solid fa-star"></i>
+            <span>Celebrity</span>
+          </div>
+          <i class="fa-solid fa-chevron-down text-gray-400"></i>
+         </div>
+         <div class="flex flex-row  items-center justify-between w-full hover:cursor-pointer hover:bg-gray-200 ">
+          <div>
+            <i class="fa-solid fa-spinner"></i>
+            <span>More Topics</span>
+          </div>
+          <i class="fa-solid fa-chevron-down text-gray-400"></i>
+         </div>
+         <hr class="w-full">
+         <span class="w-52 mt-5">Create an account to follow your favorite communities and start taking part in conversations.</span>
+         <button class="text-white bg-blue-600 p-2 mt-5 rounded-full w-full">Join reddit</button>
+        </div>
+        <div class="right bg-[#DAE0E6FF]    mobile:p-0 desktop:px-16 desktop:w-full">
+          <div class="container flex flex-col justify-between w-full  mt-2   box-border">
+            <div class="up flex flex-col justify-between items-start w-full mobile:mx-10 mobile:w-[84%] desktop:w-full desktop:mx-0">
+              <span class="font-bold">Trending today</span>
+              <div class="Trendss flex flex-row justify-between items-center w-full mt-2">
+                <div class="trend-item bg-ufc">
+                  <div class="info  absolute  flex flex-col justify-end h-190 rounded-b-md bg-gradient-to-t from-black to-transparent">
+                    <span class="text-white font-bold">UFC 281 
+                    </span>
+                    <span class="text-white font-bold ">[Official] UFC 281: Adesanya vs. Pereira - Press Conference &</span>
+                    <div class="flex flex-row  items-center   ">
+                      <img src="icons.png" class="w-4 h-4">
+                      <span class="text-white">r/MMA and more</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="trend-item bg-plane mobile:hidden desktop:flex">
+                  <div class="info  absolute  flex flex-col justify-end h-190 rounded-b-md bg-gradient-to-t from-black to-transparent">
+                    <span class="text-white font-bold">COP27 
+                    </span>
+                    <span class="text-white font-bold ">FOUR HUNDRED private jets arrived in Egypt during COP27...</span>
+                    <div class="flex flex-row  items-center ">
+                      <img src="icons2.png" class="w-4 h-4">
+                      <span class="text-white">r/environment and more</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="trend-item bg-holland mobile:hidden desktop:flex">
+                  <div class="info  absolute  flex flex-col justify-end h-190 rounded-b-md bg-gradient-to-t from-black to-transparent">
+                    <span class="text-white font-bold">T20 WORLD CUP 
+                    </span>
+                    <span class="text-white font-bold ">England are the Champions of the ICC T20 World Cup 2022</span>
+                    <div class="flex flex-row  items-center ">
+                      <img src="icons3.png" class="w-4 h-4">
+                      <span class="text-white">r/Cricket and more</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="trend-item bg-bayden mobile:hidden desktop:flex">
+                  <div class="info  absolute flex flex-col justify-end h-190 rounded-b-md bg-gradient-to-t from-black to-transparent">
+                    <span class="text-white font-bold">JOE BIDEN
+                    </span>
+                    <span class="text-white font-bold ">A Senate in Democratic hands clears the path for Biden to...</span>
+                    <div class="flex flex-row  items-center ">
+                      <img src="icons4.jpg" class="w-4 h-4">
+                      <span class="text-white">r/politics and more</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="down mt-14">
+              <span class="font-bold">Popular posts</span>
+              <div class="main desktop:flex flex-row justify-between w-full items-start">
+                <div class="sol   mobile:w-full  desktop:w-[73%] ">
+                  <div class="row1 flex flex-row justify-between items-center bg-white w-11/12 p-4 mt-2 mobile:w-full">
+                    <div class="left flex flex-row justify-between items-center w-80 mobile:w-48 desktop:w-3/5 ">
+                      <button class="text-blue-500 font-bold  p-1 rounded-full hover:bg-gray-200 desktop:flex desktop:w-[100px] desktop:items-center">
+                        <i class="fa-solid fa-fire"></i>
+                        Hot
+                      </button>
+                      <div></div>
+                      <button class="text-blue-500 font-bold p-1 rounded-full  hover:bg-gray-200 desktop:flex desktop:w-[150px] desktop:items-center">
+                        Everywhere
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </button>
+                      <button class="p-1 rounded-full font-bold  hover:bg-gray-200 mobile:hidden desktop:flex desktop:w-[100px] desktop:items-center ">
+                        <i class="fa-solid fa-sun"></i>
+                        New
+                      </button>
+                      <button class="p-1 rounded-full font-bold  hover:bg-gray-200 mobile:hidden desktop:flex desktop:w-[100px] desktop:items-center">
+                        <i class="fa-solid fa-chevron-up"></i>
+                        Top
+                      </button>
+                    </div>
+                    <div class="right mr-2">
+                      <i class="fa-solid fa-pen"></i>
+                    </div>
+                  </div>
+                  <div class="row2 flex flex-col justify-between bg-white w-11/12 items-start gap-3 mt-8 hover:outline hover:outline-1 mobile:w-full ">
+                    <div class="up flex flex-row justify-between items-center p-2 w-full">
+                      <div class="arrow flex flex-col justify-between items-center">  
+                        <i class="fa-solid fa-arrow-up text-gray-300 hover:text-red-600 hover:cursor-pointer"></i>
+                        <span class="text-xs font-bold mt-1 mb-1">14.1k</span>
+                        <i class="fa-solid fa-arrow-down text-gray-300 hover:text-blue-500 hover:cursor-pointer" ></i>
+                      </div>
+                      <div class="centre w-11/12" >
+                        <div class="flex flex-row justify-between items-center" >
+                         <div class="flex flex-row ">
+                          <img src="icons.png" class="w-4 h-4">
+                          <span class="text-xs font-bold hover:underline hover:cursor-pointer">r/AskReddit</span>
+                          <span class="text-xs text-gray-500"> •Posted by u/aryan___69 18 hours ago </span>
+                         </div>
+                          <button class="text-white bg-blue-600 py-1 rounded-full w-14 text-xs">Join</button>
+                        </div>
+                        <h1 class="text-xl  w-11/12">Women of Reddit , what’s one thing all men should know about periods?</h1>
+                      </div>
+                    </div>
+                    <div class="content"></div>
+                    <div class="down flex flex-row justify-between items-center ml-16 mb-3">
+                      <div class="flex flex-row justify-between items-center hover:bg-gray-200 p-1 hover:cursor-pointer  ">
+                        <i class="fa-solid fa-comment text-gray-500 mr-2"></i>
+                        <span class="text-sm text-gray-500 mr-2 font-bold">6.7k Comments</span>
+                      </div>
+                      <div class="flex flex-row justify-between items-center  hover:bg-gray-200 p-1 hover:cursor-pointer   ">
+                        <i class="fa-solid fa-share text-gray-500 mr-2"></i>
+                        <span class="text-sm text-gray-500 mr-2 font-bold"> Share</span>
+                      </div>
+                      <div class="flex flex-row justify-between items-center  hover:bg-gray-200 p-1 hover:cursor-pointer   ">
+                        <i class="fa-solid fa-bookmark text-gray-500 mr-2"></i>
+                        <span class="text-sm text-gray-500 mr-2 font-bold">Save</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row3 flex flex-col justify-between bg-white w-11/12 items-start gap-3 mt-8 hover:outline hover:outline-1 mobile:w-full ">
+                    <div class="up flex flex-row justify-between items-center p-2 w-full">
+                      <div class="arrow flex flex-col justify-between items-center">  
+                        <i class="fa-solid fa-arrow-up text-gray-300 hover:text-red-600 hover:cursor-pointer"></i>
+                        <span class="text-xs font-bold">14.1k</span>
+                        <i class="fa-solid fa-arrow-down text-gray-300 hover:text-blue-500 hover:cursor-pointer" ></i>
+                      </div>
+                      <div class="centre w-11/12">
+                        <div class="flex flex-row justify-between items-center" >
+                         <div class="flex flex-row ">
+                          <img src="icons.png" class="w-4 h-4">
+                          <span class="text-xs font-bold hover:underline hover:cursor-pointer">u/WSJ_Official</span>
+                          <span class="text-xs text-gray-500 mr-2"> •Promoted</span>
+                         </div>
+                          <button class="text-white bg-blue-600 py-1 rounded-full w-14 text-xs">Join</button>
+                        </div>
+                        <h1 class="text-xl  w-11/12">Move forward with insight you can trust from WSJ. Join for less than US $1/week.</h1>
+                      </div>
+                    </div>
+                    <div class="content w-11/12 ml-16 ">
+                      <img src="city.jpg" class="w-[85%] h-[380px]">
+                    </div>
+                    <div class="down flex flex-row justify-between items-center ml-16 mb-3">
+                      <div class="flex flex-row justify-between items-center hover:bg-gray-200 p-1 hover:cursor-pointer  ">
+                        <i class="fa-solid fa-comment text-gray-500 mr-2"></i>
+                        <span class="text-sm text-gray-500 mr-2 font-bold">6.7k Comments</span>
+                      </div>
+                      <div class="flex flex-row justify-between items-center  hover:bg-gray-200 p-1 hover:cursor-pointer   ">
+                        <i class="fa-solid fa-share text-gray-500 mr-2"></i>
+                        <span class="text-sm text-gray-500 mr-2 font-bold"> Share</span>
+                      </div>
+                      <div class="flex flex-row justify-between items-center  hover:bg-gray-200 p-1 hover:cursor-pointer   ">
+                        <i class="fa-solid fa-bookmark text-gray-500 mr-2"></i>
+                        <span class="text-sm text-gray-500 mr-2 font-bold">Save</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row4 flex flex-col justify-between bg-white w-11/12 items-start gap-3 mt-8 hover:outline hover:outline-1 mobile:w-full ">
+                    <div class="up flex flex-row justify-between items-center p-2 w-full">
+                      <div class="arrow flex flex-col justify-between items-center">  
+                        <i class="fa-solid fa-arrow-up text-gray-300 hover:text-red-600 hover:cursor-pointer"></i>
+                        <span class="text-xs font-bold">30.2k</span>
+                        <i class="fa-solid fa-arrow-down text-gray-300 hover:text-blue-500 hover:cursor-pointer" ></i>
+                      </div>
+                      <div class="centre w-11/12">
+                        <div class="flex flex-row justify-between items-center" >
+                         <div class="flex flex-row ">
+                          <img src="icons.png" class="w-4 h-4">
+                          <span class="text-xs font-bold hover:underline hover:cursor-pointer">r/Damnthatsinteresting
+                            </span>
+                          <span class="text-xs text-gray-500 mr-2"> •Posted by u/mootjuggler 3 hours ago</span>
+                         </div>
+                          <button class="text-white bg-blue-600 py-1 rounded-full w-14 text-xs">Join</button>
+                        </div>
+                        <h1 class="text-xl  w-11/12">In 2003, Boston Moved Their Highway Underground. Here Are The Results </h1>
+                      </div>
+                    </div>
+                    <div class="content w-11/12 ml-16 ">
+                      <img src="ebony.jpg" class="w-[85%] h-[380px]">
+                    </div>
+                    <div class="down flex flex-row justify-between items-center ml-16 mb-3">
+                      <div class="flex flex-row justify-between items-center hover:bg-gray-200 p-1 hover:cursor-pointer  ">
+                        <i class="fa-solid fa-comment text-gray-500 mr-2"></i>
+                        <span class="text-sm text-gray-500 mr-2 font-bold">6.7k Comments</span>
+                      </div>
+                      <div class="flex flex-row justify-between items-center  hover:bg-gray-200 p-1 hover:cursor-pointer   ">
+                        <i class="fa-solid fa-share text-gray-500 mr-2"></i>
+                        <span class="text-sm text-gray-500 mr-2 font-bold"> Share</span>
+                      </div>
+                      <div class="flex flex-row justify-between items-center  hover:bg-gray-200 p-1 hover:cursor-pointer   ">
+                        <i class="fa-solid fa-bookmark text-gray-500 mr-2"></i>
+                        <span class="text-sm text-gray-500 mr-2 font-bold">Save</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sag flex-col justify-between items-center mobile:hidden desktop:flex desktop:  w-[25%]">
+                <div class="up w-full flex flex-col mb-5 ">
+                  <div class="row1 bg-gaming bg-cover w-full h-24 relative">
+                    <div class="absolute w-full flex flex-col justify-end bg-gradient-to-t from-black to-transparent h-24 text-white font-bold  ">
+                      Top Gaming Communities
+                    </div>
+                  </div>
+                  <div class="main bg-white flex flex-col justify-between items-center w-full  p-2">
+                   <div class="flex flex-col justify-between items-center w-full divide-y-2 ">
+                      <div class="row1 flex flex-row justify-between items-center w-full p-1">
+                        <div class="sol flex flex-row justify-start items-center w-[80%]">
+                          <span>1</span>
+                          <i class="fa-solid fa-chevron-down "></i>
+                          <div class="flex flex-row items-center">
+                            <img src="steam.png" class="w-8 h-8 rounded-full" >
+                            <span>r/Steam</span>
+                          </div>
+                        </div>
+                        <div class="sag">
+                          <button class="bg-blue-500 text-white font-bold p-1 rounded-full w-12 text-xs">Join</button>
+                        </div>
+                      </div>
+                      <div class="row2 flex flex-row justify-between items-center w-full p-1">
+                        <div class="sol flex flex-row justify-start items-center w-[80%]">
+                          <span>1</span>
+                          <i class="fa-solid fa-chevron-down "></i>
+                          <div class="flex flex-row items-center">
+                            <img src="league of legends.png" class="w-8 h-8 rounded-full" >
+                            <span>r/leagueoflegends</span>
+                          </div>
+                        </div>
+                        <div class="sag">
+                          <button class="bg-blue-500 text-white font-bold p-1 rounded-full w-12 text-xs">Join</button>
+                        </div>
+                      </div>
+                      <div class="row3 flex flex-row justify-between items-center w-full p-1">
+                        <div class="sol flex flex-row justify-start items-center w-[80%]">
+                          <span>1</span>
+                          <i class="fa-solid fa-chevron-down "></i>
+                          <div class="flex flex-row items-center">
+                            <img src="Stardew valley.png" class="w-8 h-8 rounded-full" >
+                            <span>r/StardewValley</span>
+                          </div>
+                        </div>
+                        <div class="sag">
+                          <button class="bg-blue-500 text-white font-bold p-1 rounded-full w-12 text-xs">Join</button>
+                        </div>
+                      </div>
+                      <div class="row4 flex flex-row justify-between items-center w-full p-1">
+                        <div class="sol flex flex-row justify-start items-center w-[80%]">
+                          <span>1</span>
+                          <i class="fa-solid fa-chevron-down "></i>
+                          <div class="flex flex-row items-center">
+                            <img src="yugioh.png" class="w-8 h-8 rounded-full" >
+                            <span>r/yugioh</span>
+                          </div>
+                        </div>
+                        <div class="sag">
+                          <button class="bg-blue-500 text-white font-bold p-1 rounded-full w-12 text-xs">Join</button>
+                        </div>
+                      </div>
+                      <div class="row5 flex flex-row justify-between items-center w-full p-1">
+                        <div class="sol flex flex-row justify-start items-center w-[80%]">
+                          <span>1</span>
+                          <i class="fa-solid fa-chevron-down "></i>
+                          <div class="flex flex-row items-center">
+                            <img src="dndnext.png" class="w-8 h-8 rounded-full" >
+                            <span>r/dndnext</span>
+                          </div>
+                        </div>
+                        <div class="sag">
+                          <button class="bg-blue-500 text-white font-bold p-1 rounded-full w-12 text-xs">Join</button>
+                        </div>
+                      </div>
+                   </div>
+                    <div  class="w-full mt-1">
+                      <button class="bg-blue-500 text-white font-bold rounded-full p-1 text-center w-full">View all</button>
+                    </div>
+                    <div class="flex flex-row justify-start items-center w-full mt-3 ">
+                      <button class=" text-blue-500 font-bold p-2 mr-2 text-xs rounded-full bg-gray-200 hover:bg-gray-300 hover:cursor-pointer">Top</button>
+                      <button class=" text-blue-500 font-bold p-2 mr-2 text-xs rounded-full bg-gray-200 hover:bg-gray-300 hover:cursor-pointer">Near you</button>
+                      <button class=" text-blue-500 font-bold p-2 mr-2 text-xs rounded-full bg-gray-200 hover:bg-gray-300 hover:cursor-pointer">Aww</button>
+                      <button class=" text-blue-500 font-bold p-2 mr-2 text-xs rounded-full bg-gray-200 hover:bg-gray-300 hover:cursor-pointer">Sprots</button>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="down bg-white p-2 w-full">
+                  <div class="row1 flex flex-row justify-between items-center w-full ">
+                    <span class="text-xs text-black font-bold">POPULAR COMMUNITIES</span>
+                    <i class="fa-solid fa-chevron-up text-gray-400"></i>
+                  </div>
+                  <div class="row2  w-full grid-flow-row ">
+                    <span class="text-xs hover:underline hover:cursor-pointer  text-gray-500 mr-5 mb-2  ">AskReddit</span>
+                    <span class="text-xs hover:underline hover:cursor-pointer  text-gray-500 mr-5 mb-2 ">NoStupidQuestions</span>
+                    <span class="text-xs hover:underline hover:cursor-pointer  text-gray-500 mr-5 mb-2 ">DestinyTheGame</span>
+                    <span class="text-xs hover:underline hover:cursor-pointer  text-gray-500 mr-5 mb-2 ">explainlikeimfive</span>
+                    <span class="text-xs hover:underline hover:cursor-pointer  text-gray-500 mr-5 mb-2 ">AskMen</span>
+                    <span class="text-xs hover:underline hover:cursor-pointer  text-gray-500 mr-5 mb-2 ">leagueoflegends</span>
+                    <span class="text-xs hover:underline hover:cursor-pointer  text-gray-500 mr-5 mb-2 ">Minecraft</span>
+                  </div>
+                  <button class="text-blue-500 font-bold p-1 hover:bg-gray-200 rounded-full ">See more</button>
+                  <div class="w-full flex flex-col justify-between items-center divide-y-2">
+                    <div class="row1 flex flex-row justify-between items-center w-full p-3">
+                      <span class="text-black font-bold text-xs">GAMING</span>
+                      <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                    </div>
+                    <div class="row2 flex flex-row justify-between items-center w-full p-3">
+                      <span class="text-black font-bold text-xs">SPORTS</span>
+                      <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                    </div>
+                    <div class="row3 flex flex-row justify-between items-center w-full p-3">
+                      <span class="text-black font-bold text-xs">TV</span>
+                      <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                    </div>
+                    <div class="row4 flex flex-row justify-between items-center w-full p-3">
+                      <span class="text-black font-bold text-xs">TRAVEL</span>
+                      <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                    </div>
+                    <div class="row5 flex flex-row justify-between items-center w-full p-3">
+                      <span class="text-black font-bold text-xs">HEALTH & FITNESS</span>
+                      <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                    </div>
+                    <div class="row6 flex flex-row justify-between items-center w-full p-3">
+                      <span class="text-black font-bold text-xs">FASHION</span>
+                      <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
