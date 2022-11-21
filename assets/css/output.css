@@ -839,7 +839,7 @@ video {
 }
 
 .bg-ufc {
-  background-image: url(UFC.jpg);
+  background-image: url(../img/UFC.jpg);
 }
 
 .bg-gradient-to-t {
@@ -847,19 +847,19 @@ video {
 }
 
 .bg-plane {
-  background-image: url(Plane.jpg);
+  background-image: url(../img/Plane.jpg);
 }
 
 .bg-holland {
-  background-image: url(holland.png);
+  background-image: url(../img/holland.png);
 }
 
 .bg-bayden {
-  background-image: url(bayden.jpg);
+  background-image: url(../img/bayden.jpg);
 }
 
 .bg-gaming {
-  background-image: url(bayden.jpg);
+  background-image: url(../img/bayden.jpg);
 }
 
 .from-black {

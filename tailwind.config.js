@@ -14,11 +14,11 @@ module.exports = {
     },
     extend: {
       backgroundImage:{
-        'ufc':"url(UFC.jpg)",
-        'plane':"url(Plane.jpg)",
-        'holland':"url(holland.png)", 
-        'bayden':"url(bayden.jpg)",
-        'gaming':"url(bayden.jpg)",
+        'ufc':"url(../img/UFC.jpg)",
+        'plane':"url(../img/Plane.jpg)",
+        'holland':"url(../img/holland.png)", 
+        'bayden':"url(../img/bayden.jpg)",
+        'gaming':"url(../img/bayden.jpg)",
         
       },
       height:{
